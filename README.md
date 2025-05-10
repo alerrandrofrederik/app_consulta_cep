@@ -9,28 +9,29 @@
 
 ### Para executar o app:
     1. clone o repositório.
-    '''bash
+
+    ```bash
     git clone https://github.com/alerrandrofrederik/app_consulta_cep.git
-    '''
+    ```
 
     2. Entre na pasta do repositório.
-    '''bash
+    ```bash
     cd app_consulta_cep
-    '''
+    ```
 
     3. Instale as dependências.
-    '''bash
+    ```bash
     pip install -r requirements.txt
-    '''
+    ```
 
     4. Construa a imagem Docker.
-    '''bash
+    ```bash
     docker build -t app_consulta_cep .
-    '''
+    ```
 
     5. Execute o container.
-    '''bash
+    ```bash
     docker run -p 8501:8501 -d --name streamlit-app consulta_cep
-    '''
-    
+    ```
+
     6. Acesse o app em http://localhost:8501
